@@ -1,9 +1,9 @@
 /* CUSTOM PROPS */
 :root{
-  --accent-color:#5267DF;
-  --header-btn-color: #FA5959;
-  --heading-color: #242A45;
-  --text-color: #242A45;
+  --accent-color:#5267df;
+  --header-btn-color: #fa5959;
+  --heading-color: #242a45;
+  --text-color: #242a45;
 }
 
 /* FONTS-FACE */
@@ -76,6 +76,11 @@ html{
   box-sizing: inherit;
 }
 
+*:focus{
+  outline:  2px dashed #5267df;
+  outline-offset: 3px;
+}
+
 body{
   display: flex;
   flex-direction: column;
@@ -105,6 +110,34 @@ a{
   color: inherit;
 }
 
+/* BUTTON */
+
+.button{
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  padding: 10px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+
+/* button-header */
+.button--header{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  background-color: var(--header-btn-color);
+  transition:  color 0.4s ease, background-color 0.4s ease , border-color 0.4s ease;
+}
+.button--header:hover{
+  color: var(--header-btn-color);
+  background-color: #fff;
+  border-color:var(--header-btn-color);
+}
+
 /* CONTAINER */
 .container{
   width: 100%;
@@ -119,6 +152,62 @@ a{
 .main-content{
   flex-grow: 1;
 }
+
+/* SITE-HEADER */
+
+.site-header {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.site-header__container {
+  display: flex;
+  align-items: center;
+}
+
+.site-header__logo {
+  margin-right: 50px;
+}
+.logo {
+  display: inline-block;
+  transition: opacity 0.4s ease;
+}
+.logo:hover{
+  opacity: 0.8;
+}
+.logo:active{
+  opacity: 0.6;
+}
+.logo__image {
+  display: block;
+  width: 149px;
+  height: 25px;
+  object-fit: contain;
+}
+.site-header__sitenav {
+  margin-left: auto;
+  margin-right: 48px;
+}
+.sitenav__list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sitenav__item:not(:last-child){
+  margin-right: 46px;
+}
+
+.sitenav__link{
+  display: block;
+  transition: color 0.4s ease;
+}
+
+.sitenav__link:hover{
+  display: block;
+  color: var(--header-btn-color);
+}
+
 
 /* BACKGROUND-IMAGE FOR RETINA SCREENS */
 @media
