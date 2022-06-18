@@ -92,6 +92,7 @@ body{
   font-family:  'Rubik',"Arial", sans-serif;
   background-color: #fff;
   color:var(--text-color);
+  overflow-x: hidden;
 }
 
 img{
@@ -108,6 +109,19 @@ ul{
 a{
   text-decoration: none;
   color: inherit;
+}
+
+/* VISUALLY-HIDDEN */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* BUTTON */
@@ -136,6 +150,38 @@ a{
   color: var(--header-btn-color);
   background-color: #fff;
   border-color:var(--header-btn-color);
+}
+
+/* button-hero */
+
+.button--hero,
+.button--hero-light-bg {
+  border: 2px solid transparent;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  background-color:var(--accent-color);
+  transition: boder-color 0.4s ease ,color 0.4s ease , background-color 0.4s ease;
+}
+
+.button--hero:hover{
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  background-color: transparent;
+}
+
+.button--hero-light-bg {
+  margin-left: 16px;
+  color: var(--text-color);
+  background-color: #F7F7F7;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+}
+
+.button--hero-light-bg:hover{
+  border-color: #5B6074;
+  background-color: transparent;
 }
 
 /* CONTAINER */
@@ -206,6 +252,57 @@ a{
 .sitenav__link:hover{
   display: block;
   color: var(--header-btn-color);
+}
+
+/* HERO */
+
+.hero {
+
+  padding-top: 130px;
+  padding-bottom: 203px;
+}
+.hero__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero__container::before{
+  content: "";
+  z-index: -4;
+  position: absolute;
+  width: 100vw;
+  height: 352px;
+  right: 400px;
+  top: 134px;
+  transform: translateX(100%);
+  background-color: var(--accent-color);
+  border-radius: 316.5px;
+}
+.hero__content {
+  max-width: 540px;
+}
+
+.hero__heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 52px;
+  color: var(--heading-color);
+}
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.hero__image{
+  display: inline-block;
+  transform: translateX(75px);
+  width: 578px;
+  height: 385px;
+  object-fit: contain;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 
