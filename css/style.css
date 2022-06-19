@@ -155,7 +155,8 @@ a{
 /* button-hero */
 
 .button--hero,
-.button--hero-light-bg {
+.button--hero-light-bg ,
+.button-proposal {
   border: 2px solid transparent;
   font-weight: 500;
   font-size: 14px;
@@ -165,7 +166,8 @@ a{
   transition: boder-color 0.4s ease ,color 0.4s ease , background-color 0.4s ease;
 }
 
-.button--hero:hover{
+.button--hero:hover,
+.button-proposal:hover{
   border-color: var(--accent-color);
   color: var(--accent-color);
   background-color: transparent;
@@ -182,6 +184,29 @@ a{
 .button--hero-light-bg:hover{
   border-color: #5B6074;
   background-color: transparent;
+}
+
+/* button-features */
+
+.button-features{
+  background-color: var(--accent-color);
+}
+
+.button-features:hover{
+  opacity: 0.8;
+}
+
+.button-features:active{
+  opacity: 0.6;
+}
+
+/* BUTTON PROPOSAL */
+
+.button-proposal {
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-top: 24px;
+
 }
 
 /* CONTAINER */
@@ -305,6 +330,186 @@ a{
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+/* FEATURES */
+
+.features {
+  padding-bottom: 238px;
+}
+
+
+.features__top {
+  margin-bottom: 72px;
+}
+
+/* FEATURE-TOP */
+
+.features-top {
+  max-width: 540px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.features-top__heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 52px;
+  letter-spacing: -0.1px;
+  color: var(--text-color);
+}
+.features-top__text {
+  margin-top: 0;
+  color: var(--text-color);
+  opacity: 0.5;
+}
+
+
+/* TABS */
+
+.tabs {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+  max-width: 730px;
+  width: 100%;
+
+}
+.tabs__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content:center;
+}
+
+.tabs__item {
+  text-align: center;
+  width: 243px;
+  border-bottom: 1px solid  rgba(73, 93, 207, 0.20012)
+}
+
+.tabs__link{
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  border-bottom: 4px solid transparent;
+  outline: none;
+  transition: color 0.4s ease;
+}
+
+.tabs__link:hover{
+    color: var(--header-btn-color);
+}
+
+.tabs__item-active .tabs__link{
+  border-color:  var(--header-btn-color);
+}
+
+/* SECTION-INFO */
+
+.section-info{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-info::before{
+  content: "";
+  position: absolute;
+  z-index: -4;
+  top: 83px;
+  left: 470px;
+  width: 100vw;
+  height: 360px;
+  border-radius: 316.5px;
+  transform: translateX(-100%);
+  background-color: var(--accent-color);
+
+}
+.section-info__image {
+  width: 536px;
+  height: 346px;
+  object-fit: contain;
+}
+.section-info__content {
+  max-width: 445px;
+  width: 100%;
+  margin-left: 120px;
+}
+.section-info__heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 52px;
+  color: var(--text-color);
+}
+.section-info__text {
+  margin-top: 0;
+  margin-bottom: 32px;
+  color: var(--text-color);
+  opacity: 0.5;
+}
+
+/* PROPSAL */
+
+.proposal__list {
+  padding-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+.proposal__item{
+  position: relative;
+}
+.proposal__item:not(:last-child){
+  margin-right: 35px;
+}
+.proposal__item:nth-child(2){
+top: 40px;
+}
+.proposal__item:last-child{
+top: 80px;
+}
+.proposal-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+  padding-top: 50px;
+  padding-bottom: 24px;
+}
+.proposal-card__image {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 32px;
+}
+.proposal-card__heading {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: var(--heading-color);
+}
+.proposal-card__text {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 15px;
+  line-height: 28px;
+  color: var(--text-color);
+  opacity: 0.5;
+}
+.proposal-card__decor-img {
+  display: block;
+  width: 284px;
+  height: 4px;
+  object-fit: contain;
+}
 
 /* BACKGROUND-IMAGE FOR RETINA SCREENS */
 @media
