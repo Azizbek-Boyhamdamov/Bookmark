@@ -638,6 +638,46 @@ input:not(:focus):not(:placeholder-shown):invalid + .constacts__input-erorr , .c
 }
 
 
+/* FOOTER */
+
+.site-footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: var(--heading-color);
+}
+.site-footer__container {
+  display: flex;
+}
+
+.site-footer__logo {
+  display: inline-block;
+  margin-right: 63px;
+}
+
+.site-footer__sitenav .sitenav__link{
+  color: #fff;
+  display: inline-block;
+}
+.site-footer__sitenav .sitenav__link:hover{
+  color: var(--header-btn-color);
+}
+
+.site-footer__socials {
+  margin-left: auto;
+}
+.social-media__link{
+  display: inline-block;
+  color: #fff;
+}
+.social-media__icon{
+  display: block;
+}
+.social-media__link:first-child{
+  margin-right: 40px;
+}
+.social-media__link:hover{
+  color: var(--accent-color);
+}
 /* BACKGROUND-IMAGE FOR RETINA SCREENS */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
