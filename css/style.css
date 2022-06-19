@@ -156,7 +156,8 @@ a{
 
 .button--hero,
 .button--hero-light-bg ,
-.button-proposal {
+.button-proposal,
+.button--faq {
   border: 2px solid transparent;
   font-weight: 500;
   font-size: 14px;
@@ -206,7 +207,6 @@ a{
   padding-left: 35px;
   padding-right: 35px;
   margin-top: 24px;
-
 }
 
 /* CONTAINER */
@@ -453,23 +453,23 @@ a{
 }
 
 /* PROPSAL */
+.proposal{
+  padding-bottom: 150px;
+}
 
 .proposal__list {
   padding-top: 48px;
   display: flex;
   justify-content: center;
 }
-.proposal__item{
-  position: relative;
-}
 .proposal__item:not(:last-child){
   margin-right: 35px;
 }
 .proposal__item:nth-child(2){
-top: 40px;
+  margin-top: 40px;
 }
 .proposal__item:last-child{
-top: 80px;
+  margin-top: 80px;
 }
 .proposal-card {
   display: flex;
@@ -510,6 +510,56 @@ top: 80px;
   height: 4px;
   object-fit: contain;
 }
+
+/* FAQ */
+
+.faq {
+  padding-bottom: 150px;
+}
+.faq__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq__inner{
+  max-width: 540px;
+  width: 100%;
+}
+
+.faq__list {
+  margin-top: 56px;
+  text-align: left;
+}
+.faq__item {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  border-top: 1px solid rgba(36, 42, 69 , 0.5);
+}
+.faq__item:last-child{
+  border-bottom: 1px solid rgba(36, 42, 69 , 0.5);
+}
+.faq__link {
+  display: flex;
+  justify-content: space-between;
+  transition: color 0.4s ease;
+}
+.faq__link:hover{
+  color: var(--header-btn-color);
+}
+.faq__text{
+  display: none;
+}
+.faq__icon-down {
+  display: block;
+  margin-right: 24px;
+}
+.faq__button-wrapper{
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+}
+
 
 /* BACKGROUND-IMAGE FOR RETINA SCREENS */
 @media
