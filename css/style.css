@@ -541,6 +541,7 @@ a{
 }
 .faq__link {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   transition: color 0.4s ease;
 }
@@ -558,6 +559,82 @@ a{
   margin-top: 56px;
   display: flex;
   justify-content: center;
+}
+
+/*  CONTACTS */
+
+.contacts {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+.contacts__container {
+  padding-top: 58px;
+  padding-bottom: 52px;
+  text-align: center;
+}
+
+.contacts__text {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 40px;
+  letter-spacing: 5px;
+}
+.contacts__title {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.1px;
+}
+.contacts__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacts__input-wrapper{
+  position: relative;
+}
+.contacts__input {
+  width: 300px;
+  margin-right: 16px;
+  padding: 8px 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+.constacts__input-erorr{
+  display: none;
+  position: absolute;
+  top: calc(100% - 5px);
+  left: 0;
+  width: 300px;
+  padding-top: 4px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  background-color: var(--header-btn-color);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: left;
+  font-size: 10px;
+  line-height: 12px;
+  font-style: italic;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: red;
+  background-image: url("../image/error-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid + .constacts__input-erorr , .contacts__input-erorr-icon{
+  display: block;
 }
 
 
