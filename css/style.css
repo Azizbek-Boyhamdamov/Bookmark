@@ -1,9 +1,10 @@
 /* CUSTOM PROPS */
 :root{
-  --accent-color:#5267df;
-  --header-btn-color: #fa5959;
-  --heading-color: #242a45;
+  --blue:#5267df;
+  --red: #fa5959;
   --text-color: #242a45;
+  --text-color-50:rgba(36, 42, 69,0.5);
+  --text-color-75:rgba(36, 42, 69,0.75);
 }
 
 /* FONTS-FACE */
