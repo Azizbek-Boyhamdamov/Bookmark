@@ -201,6 +201,29 @@ a{
   height: 25px;
   object-fit: contain;
 }
+
+/* SITENAV */
+
+
+.sitenav {
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+.sitenav__list {
+  display: flex;
+}
+.sitenav__item:not(:last-child){
+  margin-right: 48px;
+}
+.sitenav__link{
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+  transition: color 0.4s ease;
+}
+.sitenav__link:hover{
+  color: var(--red);
+}
 /* SITE-HEADER */
 
 .site-header {
