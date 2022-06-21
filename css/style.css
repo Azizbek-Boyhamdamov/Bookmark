@@ -106,7 +106,7 @@ a{
 /* CONTAINER */
 .container{
   width: 100%;
-  max-width: 1140px;
+  max-width: 1144px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -253,14 +253,13 @@ a{
 /* HERO */
 
 .hero {
-
-  padding-top: 130px;
-  padding-bottom: 203px;
+  padding-top: 67px;
+  padding-bottom: 105px;
 }
 .hero__container {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .hero__container::before{
@@ -269,14 +268,18 @@ a{
   position: absolute;
   width: 100vw;
   height: 352px;
-  right: 400px;
+  right: 365px;
   top: 134px;
   transform: translateX(100%);
-  background-color: var(--accent-color);
+  background-color: var(--blue);
   border-radius: 316.5px;
 }
 .hero__content {
   max-width: 540px;
+  width: 100%;
+  padding-top: 66px;
+  margin-right: 65px;
+  flex-shrink: 0;
 }
 
 .hero__heading {
@@ -285,16 +288,26 @@ a{
   font-weight: 500;
   font-size: 48px;
   line-height: 52px;
-  color: var(--heading-color);
+  color: var(--text-color);
 }
 .hero__text {
   margin-top: 0;
   margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color-50);
+}
+
+.hero__actions {
+  display: flex;
+}
+.hero__actions-item:not(:last-child) {
+  margin-right: 16px;
 }
 
 .hero__image{
   display: inline-block;
-  transform: translateX(75px);
+  flex-shrink: 0;
   width: 578px;
   height: 385px;
   object-fit: contain;
