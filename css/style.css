@@ -186,7 +186,7 @@ a{
 /* LOGO */
 
 .logo {
-  display: inline-block;
+  display:block;
   transition: opacity 0.4s ease;
 }
 .logo:hover{
