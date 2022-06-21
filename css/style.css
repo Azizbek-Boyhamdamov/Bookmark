@@ -131,6 +131,9 @@ a{
   line-height: 2;
   white-space: nowrap;
   cursor: pointer;
+  transition-property: color, border-color, background-color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
 }
 
 .button:active{
