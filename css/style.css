@@ -228,6 +228,36 @@ a{
   color: var(--red);
 }
 
+/* SECTION */
+
+.section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.container {
+}
+.section__info {
+  width: 100%;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.section__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 52px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.section__description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+}
+
 /* SITE-HEADER */
 
 .site-header {
