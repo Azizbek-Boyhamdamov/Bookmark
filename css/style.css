@@ -234,8 +234,7 @@ a{
   padding-top: 75px;
   padding-bottom: 75px;
 }
-.container {
-}
+
 .section__info {
   width: 100%;
   max-width: 540px;
@@ -346,9 +345,6 @@ a{
 
 /* FEATURES */
 
-.features__section-info{
-  margin-bottom: 43px;
-}
 
 /* FEATURE-TAB-PANEL */
 
@@ -449,8 +445,8 @@ a{
   display: none;
 }
 
-.tabs__item-active .tabs__link{
-  border-color:  var(--header-btn-color);
+.tabs__panel--active{
+  display: block;
 }
 
 /* SECTION-INFO */
