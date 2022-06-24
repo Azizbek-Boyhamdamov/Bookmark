@@ -424,6 +424,29 @@ a{
 .tabs__link:active{
   opacity: 0.6;
 }
+
+.tabs__panels {
+
+  padding-top: 75px;
+  padding-bottom: 165px;
+}
+
+.tabs__panel::before{
+  content: "";
+  position: absolute;
+  z-index: -6;
+  width: 100vw;
+  height: 352px;
+  top: 83px;
+  left: calc(50% - 80px);
+  border-radius: 316.5px;
+  transform: translateX(-100%);
+  background-color: var(--blue);
+}
+
+.tabs__panel {
+  position: relative;
+  display: none;
 }
 
 .tabs__item-active .tabs__link{
