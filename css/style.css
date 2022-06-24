@@ -346,8 +346,8 @@ a{
 
 /* FEATURES */
 
-.features {
-  padding-bottom: 238px;
+.features__section-info{
+  margin-bottom: 43px;
 }
 
 /* FEATURE-TAB-PANEL */
