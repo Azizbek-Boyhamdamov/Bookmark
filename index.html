@@ -50,29 +50,65 @@
     </section>
 
     <!-- FEATURES -->
-    <section class="features">
-      <div class="features__container container">
-        <div class="features__top features-top">
-          <h2 class="features-top__heading">Features</h2>
-          <p class="features-top__text">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+    <section class="features section">
+      <div class="container">
+        <div class="features__section-info section__info">
+          <h2 class="section__title">Features</h2>
+          <p class="section__description">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
         </div>
-        <div class="features__tab tabs">
+
+        <!-- TABS -->
+
+        <div class=" tabs">
           <ul class="tabs__list">
             <li class="tabs__item  tabs__item-active"><a href="#feature-simple-bookmarking" class="tabs__link ">Simple Bookmarking</a></li>
             <li class="tabs__item "><a href="#feature-speedy-search" class="tabs__link js-tabs__link">Speedy Searching</a></li>
             <li class="tabs__item "><a href="#feature-easy-sharing" class="tabs__link ">Easy Sharing</a></li>
           </ul>
-        </div>
-        <div class="features__section section-info">
-          <img class="section-info__image" src="./image/feature_image.svg" alt="feature-imaeg" width="536" height="346">
-          <div class="section-info__content">
-            <h3 class="section-info__heading js-section-info" data-intellegent-search="Intelligent search" data-share-bookmark="Share your bookmarks">Bookmark in one click</h3>
-            <p class="section-info__text js-section-info" data-intellegent-search-text="Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks." data-share-bookmark-text="Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-            <a href="#" class="button button-features">More Info</a>
+
+
+        <!-- TABS-PANELS -->
+
+        <div class="tabs__panels">
+          <div class="tabs__panel tabs__panel--active" id="feature-simple-bookmarking">
+            <section class="feature-tab-panel">
+              <img class="feature-tab-panel__image" src="./image/feature_image.svg" alt="Bookmark manager illustration" width="536" height="346" >
+              <div class="feature-tab-panel__info">
+                <h3 class="feature-tab-panel__title">Bookmark in one click</h3>
+                <p class="feature-tab-panel__text">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                <a class="button button--blue" href="#">More info</a>
+              </div>
+            </section>
           </div>
-        </div>
+
+            <div class="tabs__panel" id="feature-speedy-search">
+              <section class="feature-tab-panel">
+                <img class="feature-tab-panel__image" src="./image/tab_panel_image.svg" alt="Bookmark searc  illustration" width="468" height="363" >
+                <div class="feature-tab-panel__info">
+                  <h3 class="feature-tab-panel__title">Intelligent search</h3>
+                  <p class="feature-tab-panel__text">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                  <a class="button button--blue" href="#">More info</a>
+                </div>
+              </section>
+            </div>
+
+            <div class="tabs__panel">
+              <section class="feature-tab-panel" id="feature-easy-sharing">
+                <img class="feature-tab-panel__image" src="./image/tab_panel_image-3.svg" alt="Bookmark share illustration" width="536" height="346" >
+                <div class="feature-tab-panel__info">
+                  <h3 class="feature-tab-panel__title">Share your bookmarks</h3>
+                  <p class="feature-tab-panel__text">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                  <a class="button button--blue" href="#">More info</a>
+                </div>
+              </section>
+            </div>
+
+          </div>
+      </div>
       </div>
     </section>
+
+
 
     <!-- EXTENTION -->
     <section class="section">
