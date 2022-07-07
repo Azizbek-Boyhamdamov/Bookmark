@@ -351,12 +351,25 @@ a{
 .feature-tab-panel {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 .feature-tab-panel__image {
   margin-right: 30px;
   object-fit: contain;
 }
+
+.feature-tab-panel__image--bookmark-manager{
+  margin-right: 125px;
+}
+
+.feature-tab-panel__image--speedy-search{
+  margin-right: 118px;
+}
+
+.feature-tab-panel__image--easy-sharing{
+  margin-right: 145px;
+}
+
 .feature-tab-panel__info {
   max-width: 445px;
 }
@@ -422,7 +435,6 @@ a{
 }
 
 .tabs__panels {
-
   padding-top: 75px;
   padding-bottom: 165px;
 }
