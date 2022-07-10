@@ -684,27 +684,37 @@ a{
   margin-bottom: 54px;
 }
 
-/*  CONTACTS */
+/*  SUBSCRIPTION */
 
-.contacts {
-  background-color: var(--accent-color);
+.subscription{
+  background-color: var(--blue);
   color: #fff;
 }
-.contacts__container {
+
+.subscription__container {
   padding-top: 58px;
-  padding-bottom: 52px;
+  padding-bottom: 74px;
+}
+
+.subscription__inner{
+  width: 100%;
+  max-width: 442px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
-.contacts__text {
+.subscription__text {
   margin-top: 0;
   margin-bottom: 24px;
   font-weight: 500;
   font-size: 13px;
   line-height: 40px;
+  text-transform: uppercase;
   letter-spacing: 5px;
 }
-.contacts__title {
+
+.subscription__title {
   margin-top: 0;
   margin-bottom: 36px;
   font-weight: 500;
@@ -712,17 +722,21 @@ a{
   line-height: 40px;
   letter-spacing: -0.1px;
 }
-.contacts__form {
+
+.subscription__form {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.contacts__input-wrapper{
+
+.subscription__input-wrapper{
   position: relative;
-}
-.contacts__input {
-  width: 300px;
+  z-index: 1;
   margin-right: 16px;
+}
+
+.subscription__input {
+  width: 300px;
   padding: 8px 20px;
   font-weight: 400;
   font-size: 14px;
@@ -731,16 +745,16 @@ a{
   border: 2px solid transparent;
   border-radius: 5px;
 }
-.constacts__input-erorr{
+
+.subscription__input-erorr{
   display: none;
   position: absolute;
-  top: calc(100% - 5px);
+  z-index: -1;
   left: 0;
-  width: 300px;
-  padding-top: 4px;
-  padding-bottom: 6px;
-  padding-left: 12px;
-  background-color: var(--header-btn-color);
+  top: calc(100% - 5px);
+  width: 100%;
+  padding: 6px 12px 6px;
+  background-color: var(--red);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   text-align: left;
@@ -749,14 +763,15 @@ a{
   font-style: italic;
 }
 
-input:not(:focus):not(:placeholder-shown):invalid {
-  border-color: red;
+.subscription__input:not(:focus):not(:placeholder-shown):invalid {
+  padding-right: 52px;
+  border-color: var(--red);
   background-image: url("../image/error-icon.svg");
   background-repeat: no-repeat;
   background-position: right 16px center;
 }
 
-input:not(:focus):not(:placeholder-shown):invalid + .constacts__input-erorr , .contacts__input-erorr-icon{
+.subscription__input:not(:focus):not(:placeholder-shown):invalid + .subscription__input-erorr {
   display: block;
 }
 
